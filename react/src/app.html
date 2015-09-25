@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React</title>
+		<link rel="stylesheet" href="app.bundle.css" type="text/css" />
+		<link rel="stylesheet" href="libs.bundle.css" type="text/css" />
+	</head>
+	<body>
+		<div id="main"></div>
+
+		<script src="libs.bundle.js"></script>
+		<script src="app.bundle.js"></script>
+
+		<script>
+			React.render(
+				React.createElement(App, null),
+				document.getElementById('main')
+			);
+		</script>
+	</body>
+</html>
