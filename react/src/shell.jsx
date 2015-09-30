@@ -1,5 +1,5 @@
 class Shell extends React.Component {
-    constructor() {
+    constructor(props) {
         super();
         this.onKeyUp = this.onKeyUp.bind(this);
     }
@@ -14,6 +14,7 @@ class Shell extends React.Component {
     render() {
         return (
             <div className="shell">
+                Hallo {this.state.name}
                 <textarea onKeyUp={this.onKeyUp}></textarea>
             </div>
         )
